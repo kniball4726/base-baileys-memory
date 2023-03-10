@@ -19,7 +19,7 @@ const flowTerminos = addKeyword(['Terminos'])
 const flowListaProd = addKeyword(['Lista', 'Productos'])
     .addAnswer('En breves momentos le enviaremos la lista de productos con precios actualizados')
     .addAnswer(['Para hacer un pedido escriba'],['*Pedido* o *Compra*'])
-    .addAnswer(['Para regresar escriba'],['*Inicio*'])
+    .addAnswer(['Para regresar escriba:'],['*Inicio*'])
 
 const flowPedido = addKeyword(['Pedido','Compra'])
     .addAnswer('A continuación, se van a solicitar una serie de datos para concretar su *Pedido* / *Compra*')
@@ -32,7 +32,7 @@ const flowPedido = addKeyword(['Pedido','Compra'])
     .addAnswer(['Cantidad de productos'])
     .addAnswer(['Para agregar otro producto escriba'],['Nuevo'])
     .addAnswer(['Para finalizar el pedido escriba: '],['Fin'])
-    .addAnswer(['Para regresar escriba'],['Inicio'])
+    .addAnswer(['Para regresar escriba:'],['Inicio'])
     
 
 const main = async () => {
